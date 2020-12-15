@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <title>Potfolio</title>
+</head>
+<body>
+    <nav id="nav">
+        <a class="gh-icon" target="_blank" href="https://github.com/chriscoulbeck">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+    </nav>
+      </div>
+      <section class="body-header">
+        <div class="body-bio">
+            <h1>Hello. I'm Chris Coulbeck, a designer who codes</h1>
+            <p>Check out some of my projects below</p>
+        </div>
+      </section>
+      <div class="card">
+        <div :class="{ float: project.isLeft }" class="card__media card__media-1">
+        </div>
+        <div class="card__text">
+          <h4>UX Case Study</h4>
+          <h1>Surfbreak Protection Society</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero odio laboriosam totam et aliquid explicabo nam repellendus ut suscipit. Quam!
+          </p>
+          <div>
+            <button class="card__btn"><a  target="_blank" href="https://www.behance.net/gallery/109620499/Fictional-UX-Case-Study">Demo</a></button>
+            <button class="card__btn card__btn--outline">
+              <a  target="_blank" href="https://github.com/chriscoulbeck/surfbreak-ux">Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media card__media-2 float">
+          <img
+            v-bind:src="require(`@/assets/cards/${project.image}.jpg`)"
+            alt=""
+          />
+        </div>
+        <div class="card__text">
+          <h4>NodeJS Web App</h4>
+          <h1>Crud Marketplace</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero odio laboriosam totam et aliquid explicabo nam repellendus ut suscipit. Quam!
+          </p>
+          <div>
+            <button class="card__btn"><a  target="_blank" href="https://www.behance.net/gallery/109620413/CRUD-Marketplace-NodeJS-App">Demo</a></button>
+            <button class="card__btn card__btn--outline">
+              <a  target="_blank" href="https://github.com/chriscoulbeck/market-vue">Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__media card__media-3">
+          <img
+            v-bind:src="require(`@/assets/cards/${project.image}.jpg`)"
+            alt=""
+          />
+        </div>
+        <div class="card__text">
+            <h4>Wordpress Theme</h4>
+            <h1>Otakaro Orchard</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero odio laboriosam totam et aliquid explicabo nam repellendus ut suscipit. Quam!
+            </p>
+            <div>
+              <button class="card__btn"><a target="_blank" href="https://www.behance.net/gallery/109620609/Mock-Redesign-using-a-CMS">Demo</a></button>
+              <button class="card__btn card__btn--outline">
+                <a  target="_blank" href="https://github.com/chriscoulbeck/otakaro-wp-theme">Code</a>
+              </button>
+            </div>
+      </div>
+      </body>
+    
+</body>
+</html>
